@@ -1,0 +1,102 @@
+# requirements.txt
+# Core dependencies
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# NLP and pseudonymization
+spacy>=3.7.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
+# Document processing
+python-docx>=1.1.0
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+
+# Enterprise features
+sqlite3  # Built into Python
+pathlib  # Built into Python
+
+# Optional: For better PDF processing
+# pymupdf>=1.23.0  # Alternative PDF processor
+# fitz>=0.0.1.dev2  # PyMuPDF binding
+
+---
+
+# setup_instructions.md
+
+## Legal Document Pseudonymizer Setup
+
+### Quick Setup (Recommended)
+
+1. **Install Python 3.8+ if not already installed**
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Download spaCy English model:**
+   ```bash
+   python -m spacy download en_core_web_sm
+   ```
+
+4. **Run the application:**
+   ```bash
+   streamlit run pseudonymizer_app.py
+   ```
+
+### Alternative Setup with Virtual Environment
+
+1. **Create virtual environment:**
+   ```bash
+   python -m venv pseudonymizer_env
+   
+   # Windows
+   pseudonymizer_env\Scripts\activate
+   
+   # Mac/Linux
+   source pseudonymizer_env/bin/activate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+   ```
+
+3. **Run the app:**
+   ```bash
+   streamlit run pseudonymizer_app.py
+   ```
+
+### File Structure
+```
+pseudonymizer/
+├── pseudonymizer_app.py          # Main Streamlit app
+├── pseudonymscript.py            # Enterprise pseudonymization engine
+├── requirements.txt              # Python dependencies
+├── setup_instructions.md         # This file
+├── logs/                         # Application logs (created automatically)
+├── audit_logs.db                 # Audit database (created automatically)
+└── README.md                     # Project documentation
+```
+
+### Troubleshooting
+
+**spaCy Model Issues:**
+- If spaCy download fails, try: `pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz`
+
+**PDF Processing Issues:**
+- Install additional PDF processor: `pip install pymupdf`
+- For complex PDFs, consider: `pip install pdfminer.six`
+
+**Memory Issues with Large Documents:**
+- Adjust max file size in `EnterpriseConfig`
+- Process documents in smaller chunks
+
+### Security Notes
+- All processing is done locally
+- No data is sent to external servers
+- Audit logs are stored locally in SQLite
+- Sessions are automatically cleaned up

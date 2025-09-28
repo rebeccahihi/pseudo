@@ -1,0 +1,25 @@
+2025-09-16 23:11:30,246 - pseudonymscript.enterprise - INFO - _initialize_nlp:239 - Loaded spaCy model: en_core_web_sm
+2025-09-16 23:11:30,246 - pseudonymscript.enterprise - INFO - __init__:203 - Enterprise Pseudonymization Tool initialized
+2025-09-16 23:11:30,262 - pseudonymscript.enterprise - INFO - create_session:377 - Session 97da6eec-e981-46b0-9099-6f93fa053117 created for user lawyer@firm.com
+2025-09-16 23:11:30,342 - pseudonymscript.enterprise - INFO - pseudonymize_document:504 - Document pseudonymized: sample text 3.docx (22 entities, 0.07s)
+2025-09-16 23:11:30,355 - pseudonymscript.enterprise - INFO - create_session:394 - Session 97da6eec-e981-46b0-9099-6f93fa053117 ended
+2025-09-16 23:15:24,058 - pseudonymscript.enterprise - INFO - _initialize_nlp:239 - Loaded spaCy model: en_core_web_sm
+2025-09-16 23:15:24,059 - pseudonymscript.enterprise - INFO - __init__:203 - Enterprise Pseudonymization Tool initialized
+2025-09-16 23:15:24,070 - pseudonymscript.enterprise - INFO - create_session:377 - Session bf509791-e8b6-41eb-b9ed-9df177ede9ee created for user lawyer@firm.com
+2025-09-16 23:15:24,156 - pseudonymscript.enterprise - INFO - pseudonymize_document:504 - Document pseudonymized: sample text 3.docx (22 entities, 0.07s)
+2025-09-16 23:15:24,167 - pseudonymscript.enterprise - INFO - create_session:394 - Session bf509791-e8b6-41eb-b9ed-9df177ede9ee ended
+2025-09-16 23:30:02,293 - pseudonymscript.enterprise - INFO - _initialize_nlp:239 - Loaded spaCy model: en_core_web_sm
+2025-09-16 23:30:02,293 - pseudonymscript.enterprise - INFO - __init__:203 - Enterprise Pseudonymization Tool initialized
+2025-09-16 23:30:02,293 - pseudonymscript.enterprise - INFO - create_session:383 - Session 1bb98c4c-566e-4554-93ae-acf0f468f8e6 created for user user
+2025-09-16 23:30:02,338 - pseudonymscript.enterprise - ERROR - pseudonymize_document:528 - Pseudonymization failed for sample text 3.docx: 'NoneType' object has no attribute 'strip'
+2025-09-16 23:30:02,338 - pseudonymscript.enterprise - INFO - create_session:400 - Session 1bb98c4c-566e-4554-93ae-acf0f468f8e6 ended
+2025-09-16 23:30:07,757 - pseudonymscript.enterprise - INFO - _initialize_nlp:239 - Loaded spaCy model: en_core_web_sm
+2025-09-16 23:30:07,757 - pseudonymscript.enterprise - INFO - __init__:203 - Enterprise Pseudonymization Tool initialized
+2025-09-16 23:30:07,757 - pseudonymscript.enterprise - INFO - create_session:383 - Session 7f005712-8ae6-4850-8f27-ee071f0a53ed created for user user
+2025-09-16 23:30:07,805 - pseudonymscript.enterprise - ERROR - pseudonymize_document:528 - Pseudonymization failed for sample text 3.docx: 'NoneType' object has no attribute 'strip'
+2025-09-16 23:30:07,806 - pseudonymscript.enterprise - INFO - create_session:400 - Session 7f005712-8ae6-4850-8f27-ee071f0a53ed ended
+2025-09-16 23:35:17,136 - pseudonymscript.enterprise - INFO - _initialize_nlp:239 - Loaded spaCy model: en_core_web_sm
+2025-09-16 23:35:17,137 - pseudonymscript.enterprise - INFO - __init__:203 - Enterprise Pseudonymization Tool initialized
+2025-09-16 23:35:17,137 - pseudonymscript.enterprise - INFO - create_session:383 - Session aa1d79d0-5df2-4578-b54f-77de0a327b7b created for user user
+2025-09-16 23:35:17,182 - pseudonymscript.enterprise - ERROR - pseudonymize_document:528 - Pseudonymization failed for sample text 3.docx: 'NoneType' object has no attribute 'strip'
+2025-09-16 23:35:17,182 - pseudonymscript.enterprise - INFO - create_session:400 - Session aa1d79d0-5df2-4578-b54f-77de0a327b7b ended
