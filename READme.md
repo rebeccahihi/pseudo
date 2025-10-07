@@ -34,7 +34,7 @@ This is a prototype implementation with known limitations:
 ## Setup Instructions
 
 ### Requirements
-- Python 3.8 or higher
+- Python 3.11
 - 2GB RAM minimum
 - 1GB free disk space
 
