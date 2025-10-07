@@ -67,7 +67,6 @@ python -m spacy download en_core_web_sm
 ```bash
 python --version
 python -c "import spacy; nlp = spacy.load('en_core_web_sm'); print('spaCy model loaded')"
-python compare_test.py
 ```
 ## Running the Application
 
