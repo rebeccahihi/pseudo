@@ -55,15 +55,8 @@ source .venv/bin/activate      # Mac/Linux
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
-### 4. Download spaCy model
-```bash
-# Recommended: Transformer model
-python -m spacy download en_core_web_trf
 
-# Alternative: Small model
-python -m spacy download en_core_web_sm
-```
-### 5. Verify Installation
+### 4. Verify Installation
 ```bash
 python --version
 python -c "import spacy; nlp = spacy.load('en_core_web_sm'); print('spaCy model loaded')"
